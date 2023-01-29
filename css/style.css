@@ -119,7 +119,7 @@ aside{
     margin-bottom: 10px;
 }
 
-a:link, a:visited {
+.links ul li a {
     background-color: #ff8b4b;
     color: black;
     padding: 14px 25px;
@@ -130,7 +130,7 @@ a:link, a:visited {
     border-radius: 10px;
   }
   
-  a:hover, a:active {
+  .links ul li a:hover, .a:active {
     background-color: #ffd05f;
     box-shadow: 2px 2px gray;
   }
