@@ -1,6 +1,14 @@
 /* Reguły CSS */
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+color{
+.color1 {color: #ff3f79;} 
+.color2 {color: #ff8b4b;}
+.color3 {color: #ffd05f;}
+.color4 {color: #efffa6;}
+.color5 {color: #dbffef;}
+.color6 {color:#e2ece9}
+}
 
 * {
   box-sizing: border-box;
@@ -123,17 +131,14 @@ aside{
     flex-direction: column;
     background-color: #ffd05f;
     padding:1rem;
-    border-radius: 2px;
+    
     
     
 }
 
-.widget :hover{
-    border-radius: 10%;
-    opacity:70%;
-}
 
-.widget img{
+
+.author-photo{
     
     /* float: left; */
     /* padding: 0 10px 5px 0; -alternatywne rozw w przypadku braku borderu */
@@ -143,6 +148,10 @@ aside{
     transition: all 1s linear;
 }
 
+.author-photo:hover{
+  border-radius: 10%;
+  opacity:70%;
+}
 
 
 aside p{
@@ -197,13 +206,24 @@ a:link, a:visited {
 footer {
   background-color: lightgray;
   border-top: 1px solid black;
-  text-align: center;
-  padding: 25px 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 footer p {
   margin: 0;
+  padding-bottom: 1rem;
   text-shadow: 2px 2px darkgray;
+  text-align: center;
+}
+
+.footer_copyright{
+  padding-top: 2rem;
+  padding-right: 1em;
+  align-self: flex-end;
+
 }
 
 .header_links {
@@ -226,10 +246,6 @@ footer p {
   color: #ff3f79;
 }
 
-.footer_title {
-    font-size:24px;
-    text-align: center;
-}
 
 h1 {
     color: #ff3f79;
