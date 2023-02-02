@@ -189,9 +189,7 @@ aside{
     display: flex;
     flex-direction: column;
     padding:1rem;
-    
-    
-    
+    border-radius: 10px;
 }
 
 
@@ -234,16 +232,15 @@ aside p{
 
 
 .links ul{
-    list-style-type: none;
-    padding-left: 18px;
+    padding-left: 10px;
     margin: 0;
    
 }
 
-/* .links ul li {
-  
-  
-} */
+.links ul li {
+  margin-bottom: 10px;
+  list-style: none;
+}
 
 a:link, a:visited {
     /* background-color: #adf4a5; */
@@ -299,16 +296,30 @@ footer p {
 }
 
 .list_style {
-  list-style-type: circle;
+  list-style-type: none;
 }
 
 .link_style {
   text-decoration: none;
-  color: #efffa6;
+  color: #ff3f79;
+  background-color: #ffd05f;
+  padding: 14px 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  width: 90%;
 }
 
 .link_style:hover {
-  color: #ff3f79;
+  background-color: #ff3f79;
+  color: white;
+  box-shadow: 2px 2px gray;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer_list li {
+  list-style: none;
+
 }
 
 
