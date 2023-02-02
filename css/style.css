@@ -1,6 +1,14 @@
 /* Reguły CSS */
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+color{
+.color1 {color: #ff3f79;} 
+.color2 {color: #073754, #d3d9ec, #f8be45, #bec398, #3c6d4b}
+.color3 {color:  #fe98ab;}
+.color4 {color: #ffe9e7;}
+.color5 {color: #add1d1;}
+.color6 {color:#00b5a1}
+}
 
 * {
   box-sizing: border-box;
@@ -12,6 +20,7 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: "Lato", sans-serif;
+  
 }
 
 img {
@@ -37,7 +46,11 @@ header {
     justify-content: space-between;
     padding: 15px;
     text-transform: uppercase;
-    background-color: #dbffef;
+    background: linear-gradient(
+      
+    #073754,
+      #d3d9ec
+    );
 }
 
 /* Brand */
@@ -99,11 +112,16 @@ main {
   flex-wrap: wrap;
 }
 
+
 /* Article */
 article{
     width: 70%;
     padding: 30px;
     text-align: justify;
+    background: linear-gradient(
+      #d3d9ec,
+      #073754
+    )
 }
 
 
@@ -159,7 +177,10 @@ h3 {
 aside{
     width: 30%;
     padding: 20px;
-    background-color: #efffa6;
+    background: linear-gradient(
+      #d3d9ec,
+      #073754
+    );
     border-left: 1px dashed black;
 }
 
@@ -167,19 +188,15 @@ aside{
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    background-color: #ffd05f;
     padding:1rem;
-    border-radius: 2px;
+    
     
     
 }
 
-.widget :hover{
-    border-radius: 10%;
-    opacity:70%;
-}
 
-.widget img{
+
+.author-photo{
     
     /* float: left; */
     /* padding: 0 10px 5px 0; -alternatywne rozw w przypadku braku borderu */
@@ -189,6 +206,10 @@ aside{
     transition: all 1s linear;
 }
 
+.author-photo:hover{
+  border-radius: 10%;
+  opacity:70%;
+}
 
 
 aside p{
@@ -202,9 +223,9 @@ aside p{
 }
 
 .florem{
-    color:#ff3f79;
+    color:#efffa6;
     font-weight: bold;
-    font-size: 2rem;
+    
 }
 
 
@@ -216,15 +237,17 @@ aside p{
     list-style-type: none;
     padding-left: 18px;
     margin: 0;
+   
 }
 
-.links ul li {
-  margin-bottom: 10px;
-}
+/* .links ul li {
+  
+  
+} */
 
 a:link, a:visited {
-    background-color: #ff8b4b;
-    color: black;
+    /* background-color: #adf4a5; */
+    color: #efffa6;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -234,26 +257,42 @@ a:link, a:visited {
   }
   
   a:hover, a:active {
-    background-color: #ffd05f;
+    background-color: #ff3f79;
     box-shadow: 2px 2px gray;
+    color: #efffa6;
   }
+
+  
 
 /* Footer */
 
 footer {
-  background-color: lightgray;
+  background-color: #073754;
   border-top: 1px solid black;
-  text-align: center;
-  padding: 25px 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 footer p {
   margin: 0;
-  text-shadow: 2px 2px darkgray;
+  padding-bottom: 1rem;
+  text-shadow: 1px 1px rgb(37, 170, 66);
+  text-align: center;
+  color: #efffa6;
+}
+
+.footer_copyright{
+  padding-top: 2rem;
+  padding-right: 1em;
+  align-self: flex-end;
+  justify-content: center;
+  font-size: 0.8rem;
 }
 
 .header_links {
-  color: #ff3f79;
+  color: #efffa6;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -265,23 +304,24 @@ footer p {
 
 .link_style {
   text-decoration: none;
-  color: #000000;
+  color: #efffa6;
 }
 
 .link_style:hover {
   color: #ff3f79;
 }
 
-.footer_title {
-    font-size:24px;
-    text-align: center;
-}
 
 
 
 
 .orange {
-    color: #ff8b4b;
+    color: #efffa6;
+}
+
+.fa{
+  border: 1px solid black;
+  
 }
 
 @media screen and (max-width: 800px){
