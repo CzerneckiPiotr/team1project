@@ -155,6 +155,9 @@ a.information_style {
 }
 a.information_style:hover {
   background-color: #ffd05f;
+  transition: all 0.3s ease-in-out;
+  color: #000000;
+  box-shadow: 2px 2px #565555;
 }
 .article_container {
   display: flex;
